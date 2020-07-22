@@ -12,31 +12,39 @@
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+### Who is John Conway?
+John Horton Conway, born Dec. 26th, 1937, was an English-born Princeton mathematician. In 1970 John Conway invented a cellular automaton that came to known as "Conway's Game of Life". 
+
+#### Notable Achievements
+* Discovered surreal numbers
+* Co-conceptualized the Free Will Theorem
+
+## Rules of the game
+This is a Turing complete cellular automata project that only requires an initial input thus making this a zero player game that requires no interaction. 
+
+1. The world is a 2D grid.
+2. Each cell in the grid is always “alive” or “dead” / "on" or "off".
+3. Time advances as a series of discrete rounds.
+
+#### Living cells follow 3 rules, each round:
+
+1. If fewer than 2 of your neighbors are alive, you die. (underpopulation)
+2. If more than 3 of your neighbors are alive, you die (overpopulation)
+3. Otherwise (if you have 2 or 3 neighbors) you survive.
+
+#### Dead cells have 2 rules, each round:
+
+1. If exactly 3 of your neighbors are alive, you become alive. (reproduction)
+2. Otherwise you remain dead.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
 
-## Objectives
 
-* Student should be able to create a unique, high-quality project that
-  can be added to a professional portfolio
-* [Student should be able to describe the rules of Conway’s “Game of
-  Life”](objectives/rules-game-life)
-* [Student should be able to explain what cellular automata are and
-  describe how they are useful in real
-  life](objectives/explain-describe-ca)
-* [Student should be able to correctly analyze the ‘Turing Completeness’
-  of Conway’s “Game of Life”](objectives/turing-complete)
-* Student should be able to implement a visualization of Conway’s “Game
-  of Life” using technologies related to their specific
-  track.
-* [Student should be able to utilize "double buffering" to implement
-  the game](objectives/double-buffer)
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
+* Javascript - version 1.0
+* React - version 2.0
 * Tech 3 - version 3.0
 
 ## Setup
@@ -57,7 +65,8 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_, 
+<!-- _finished_, _no longer continue_ and why? -->
 
 ## Inspiration
 Add here credits. Project inspired by..., based on...
