@@ -3,6 +3,7 @@
 
 ## Table of contents
 * [General info](#general-info)
+* [Rules of the game](#rulesofthegame)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
