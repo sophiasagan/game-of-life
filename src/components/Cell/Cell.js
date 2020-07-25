@@ -6,7 +6,7 @@ class Cell extends Component {
     this.props.onCellClick(this.props.i, this.props.j);
   }
   render() {
-    const style = this.props.value ? {background: '#393'} : {background: '#ddf'};
+    const style = this.props.value ? {background: '#009'} : {background: '#ddf'};
     return (
       <div
         className='cell'

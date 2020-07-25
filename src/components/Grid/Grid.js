@@ -2,13 +2,16 @@ import './Grid.css';
 import React, { Component } from 'react';
 import Cell from '../Cell/Cell';
 import Game from '../Game';
+// import Button from '../Buttons'
 
 class Grid extends Component {
   constructor (props) {
     super(props);
-    this.state = {ticks: 0};
-    this.Game = new Game(() => {this.setState({ticks: this.state.ticks + 1})});
+    this.state = {gens: 0};
+    this.Game = new Game(() => {this.setState({gens: this.state.gens + 1})});
   }
+
+  onCellClick = (i, j) => {this.props.Game.swapCell(i,j); }
 
   onStartClick = () => { this.Game.startGeneration(); }
   onStopClick = () => { this.Game.stopGeneration(); }
@@ -25,7 +28,7 @@ class Grid extends Component {
           {
             grid.map((sub, i) => {
               return (
-                <div className={'col'} key={i}>
+                <div className={'row'} key={i}>
                   {sub.map((v, j) => {
                     return (
                       <div key={j}>

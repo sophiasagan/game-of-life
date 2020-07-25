@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   text-align: center;
   width: 100vw;
   height: 100vh;
@@ -6,7 +7,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(174, 0, 255, 0.5)),
-  url("img/background.png");
+  background-image: linear-gradient(rgb(22, 54, 83,.9), rgb(82, 93, 111,.9), rgb(137, 135, 140,.95), rgb(193, 181, 169,.97), rgb(251, 228, 199,.99)),
+  url("img/background.png"); 
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  /* background-repeat: repeat-y; */
+  opacity: 0.75;
+  
+  /* background-blend-mode: color-burn; */
 }
-
