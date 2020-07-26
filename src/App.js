@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from './components/Grid/Grid';
+import AboutCarousel from './Carousel/Carousel'
 import './App.css';
 
 
@@ -12,7 +13,7 @@ function App(){
       </header>
       <main>
         <Grid />
-        
+        <AboutCarousel />
       </main>
     </div>
   );
