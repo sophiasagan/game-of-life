@@ -11,9 +11,13 @@ function App(){
       <header className="App-header">
         "Conway's Game of Life"
       </header>
-      <main>
+      <main className = "App-Container">
+        <div className = "Grid">
         <Grid />
+        </div>
+        <div className = "AboutCarousel">
         <AboutCarousel />
+        </div>
       </main>
     </div>
   );

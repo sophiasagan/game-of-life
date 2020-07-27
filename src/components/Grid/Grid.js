@@ -46,6 +46,7 @@ class Grid extends Component {
         <button onClick={this.onResetClick}>Reset</button>
         <button onClick={this.onRandomClick}>Random</button>
         <input type="range" min="1" max="100" onInput={this.onChangeRange}/>
+        <span> Generation Count: {this.genCount}</span>
       </div>
     );
   }

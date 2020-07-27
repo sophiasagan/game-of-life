@@ -1,0 +1,50 @@
+/* .carousel {
+    position: static;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+  }
+   */
+  /* .carousel .carouselBlock {
+    display: flex;
+    align-items: center;
+    background: #ddf;
+    border: solid 2px transparent;
+    border-radius: 3px;
+    outline: none;
+    margin: 3px;
+    padding: 6px;
+    box-sizing: content-box;
+    justify-content: space-between;
+  } */
+  
+  /* .carousel .carouselBlock:hover {
+    cursor: default;
+    border: solid 2px #66f;
+  }
+  
+  .carousel input {
+    background: #ddf;
+    border: solid 2px #666;
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: content-box;
+    width: 52px;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .carousel >.patternsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .carousel > .patternsWrapper {
+    border: solid 1px #888;
+    border-radius: 3px;
+    margin: 2px;
+  } */
+  

@@ -10,7 +10,7 @@
   -webkit-box-shadow: 19px 19px 28px 0px rgba(0, 0, 0, 0.87);
   -moz-box-shadow: 19px 19px 28px 0px rgba(0, 0, 0, 0.87);
   box-shadow: 19px 19px 28px 0px rgba(0, 0, 0, 0.87);
-  margin: auto;
+  margin: 0 auto;
 }
 
 .grid > .row {

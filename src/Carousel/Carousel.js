@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import { render } from "react-dom";
 import styled from "styled-components";
 import Container from "react-bootstrap/Container";
@@ -11,6 +11,14 @@ import { Button, ButtonGroup } from "./panel-component.jsx";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 // import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+import React, { Component, useEffect } from "react";
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+// import GameOfLifeHelpLayout from "./GameOfLifeHelpLayout";
+// import ReactHtmlParser, {
+//   processNodes,
+//   convertNodeToElement,
+//   htmlparser2
+// } from "react-html-parser";
 
 // import background from "../../img/background.png";
 // import background2 from "../../img/background2.jpg";
@@ -26,11 +34,12 @@ import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 //   padding: 2rem 0 0;
 // `;
 
-const styles = { height: 400, width: "100%" };
+const styles = { height: 700, width: "100%" };
 const icon_glass = <span className="fa fa-glass" />;
 const icon_music = <span className="fa fa-music" />;
 
 function AboutCarousel(){
+  
   const [autoplay, setAutoplay] = useState(true);
   const [icon, setIcon] = useState({});
   const slider_ref = useRef(null);
@@ -50,6 +59,7 @@ function AboutCarousel(){
     });
   }, []);
 
+  
   return (
     <div className="container-fluid" style={{ paddingBottom: 20 }}>
       <Row>
@@ -57,7 +67,7 @@ function AboutCarousel(){
           <RBCarousel
             animation={true}
             autoplay={autoplay}
-            slideshowSpeed={2000}
+            slideshowSpeed={3000}
             defaultActiveIndex={0}
             leftIcon={icon.leftIcon}
             rightIcon={icon.rightIcon}
@@ -65,15 +75,16 @@ function AboutCarousel(){
             ref={slider_ref}
             version={4}
           >
+            
             <div style={{ height: 400 }}>
               <img
                 style={{ width: "100%", height: "100%" }}
-                src="https://www.w3schools.com/bootstrap/ny.jpg"
+                src="https://newsbrig.com/wp-content/uploads/2020/04/Mathematician-John-Horton-Conway-a-%E2%80%98magical-genius%E2%80%99-known-for-inventing-the-%E2%80%98Game-of-Life%E2%80%99-dies-at-age-82.jpg"
                 alt="some"
               />
-              <div className="carousel-caption">Image</div>
+              <div className="carousel-caption">John Horton Conway <p> (26 December 1937 - 11 April 2020)</p></div>
             </div>
-            <div style={{ ...styles, backgroundColor: "aqua" }}>
+            {/* <div style={{ ...styles, backgroundColor: "aqua" }}>
               <video
                 className="carousel-center"
                 controls
@@ -86,12 +97,23 @@ function AboutCarousel(){
                 />
               </video>
               <div className="carousel-caption">Video</div>
+            </div> */}
+            <div style={{ ...styles, backgroundColor: "grey" }}>
+              <div className="carousel-center"><p>This page visualizes cellular automatons based on The Game of Life by mathematician <a href='https://www.conwaylife.com/wiki/Conway%27s_Game_of_Life'>John Horton Conway.</a></p><p>A <a href='https://mathworld.wolfram.com/CellularAutomaton.html'>cellular automaton</a> is a collection of colored cells placed on a grid that evolve through time and create patterns according to the states of neighboring cells. </p><p>The "game" is actually a zero-player game, its evolution is determined by its initial state, needing no input from human players. One typically interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+              </div>
+              <div className="carousel-caption">About</div>
             </div>
-            <div style={{ ...styles, backgroundColor: "lightpink" }}>
-              <div className="carousel-center">center Text</div>
-              <div className="carousel-caption">Text</div>
+            <div style={{ ...styles, backgroundColor: "grey" }}>
+              <div className="carousel-center"><p>This page visualizes cellular automatons based on The Game of Life by mathematician <a href='https://www.conwaylife.com/wiki/Conway%27s_Game_of_Life'>John Horton Conway.</a></p><p>A <a href='https://mathworld.wolfram.com/CellularAutomaton.html'>cellular automaton</a> is a collection of colored cells placed on a grid that evolve through time and create patterns according to the states of neighboring cells. </p><p>The "game" is actually a zero-player game, its evolution is determined by its initial state, needing no input from human players. One typically interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+              </div>
+              <div className="carousel-caption">About</div>
             </div>
-            <div style={{ ...styles, backgroundColor: "lightblue" }}>
+            <div style={{ ...styles, backgroundColor: "grey" }}>
+              <div className="carousel-center"><p>This page visualizes cellular automatons based on The Game of Life by mathematician <a href='https://www.conwaylife.com/wiki/Conway%27s_Game_of_Life'>John Horton Conway.</a></p><p>A <a href='https://mathworld.wolfram.com/CellularAutomaton.html'>cellular automaton</a> is a collection of colored cells placed on a grid that evolve through time and create patterns according to the states of neighboring cells. </p><p>The "game" is actually a zero-player game, its evolution is determined by its initial state, needing no input from human players. One typically interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+              </div>
+              <div className="carousel-caption">About</div>
+            </div>
+            {/* <div style={{ ...styles, backgroundColor: "lightblue" }}>
               <span>text</span>
               <div className="carousel-caption">Text</div>
             </div>
@@ -107,7 +129,7 @@ function AboutCarousel(){
                 />
               </div>
               <div className="carousel-caption">Youtube</div>
-            </div>
+            </div> */}
           </RBCarousel>
         </Col>
       </Row>
