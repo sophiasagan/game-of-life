@@ -1,0 +1,19 @@
+<h2> Conway's Game of Life </h2><p>This page visualizes cellular automatons based on The Game of Life by mathematician <a href='https://www.conwaylife.com/wiki/Conway%27s_Game_of_Life'>John Horton Conway.</a></p><p>A <a href='https://mathworld.wolfram.com/CellularAutomaton.html'>cellular automaton</a> is a collection of colored cells placed on a grid that evolve through time and create patterns according to the states of neighboring cells. </p><p>The "game" is actually a zero-player game, its evolution is determined by its initial state, needing no input from human players. One typically interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+<h2>Rules of the game</h2>
+<p>This is a Turing complete cellular automata project that only requires an initial input thus making this a zero player game that requires no interaction. </p>
+<li>
+1. The world is a 2D grid.
+2. Each cell in the grid is always “alive” or “dead” / "on" or "off".
+3. Time advances as a series of discrete rounds.
+</li>
+<h2> Living cells follow 3 rules, each round:</h2>
+<li>
+1. If fewer than 2 of your neighbors are alive, you die. (underpopulation)
+2. If more than 3 of your neighbors are alive, you die (overpopulation)
+3. Otherwise (if you have 2 or 3 neighbors) you survive.
+</li>
+<h2> Dead cells have 2 rules, each round:</h2>
+<li>
+1. If exactly 3 of your neighbors are alive, you become alive. (reproduction)
+2. Otherwise you remain dead.
+</li>

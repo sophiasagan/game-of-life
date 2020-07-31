@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import './Cell.css';
+import React from "react";
 
-class Cell extends Component {
-  onClick = () => {
-    this.props.onCellClick(this.props.i, this.props.j);
-  }
+const Cell = ({ golGrid, row_index, col_index, setGrid, isRunning }) => {
+    const handleClick = () => {
+        if (isRunning) {
+            return;
+        }
+        let newGrid = [...golGrid];
+        newGrid[row_index][col_index] = golGrid[row_index][col_index] ? 0 : 1;
+        setGrid(newGrid);
+    };
 
-  shouldComponentUpdate = (nextProps, nextState) => {
-    return nextProps.value !== this.props.value;
-  }
-
-  render() {
-    const style = this.props.value ? {background: '#009'} : {background: '#ddf'};
     return (
-      <div
-        className='cell'
-        onClick={this.onClick}
-        style={style}
-      />
+        <>
+            <div
+                onClick={handleClick}
+                className={`cell ${
+                    golGrid[row_index][col_index] ? "alive" : "dead"
+                }`}
+            />
+        </>
     );
-  }
-}
+};
 
 export default Cell;
