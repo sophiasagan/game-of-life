@@ -56,13 +56,8 @@
 	 flex-direction: column;
 	 align-items: center;
 } */
- @media (max-width: 550px) {
-	 .screen .mobile-container {
-		 width: 100%;
-		 background-color: black;
-	}
-}
- .screen .mobile-container h1 {
+ 
+ .screen .app-container h1 {
 	 font-size: calc(20px + 2vmin);
 	 margin: 0;
 	 text-align: center;
@@ -70,284 +65,158 @@
 	 padding: 10px 0;
 	 line-height: 1.5;
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container h1 {
-		 font-size: 1.7rem;
-	}
-}
- .screen .mobile-container .game-container {
+ 
+ .screen .app-container .game-container {
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-	 border: solid black 2px;
-	 padding: 0 10px;
-	 background-color: black;
-	 border-radius: 5px;
+	 /* border: solid black 2px; */
+	 padding: 0 180px;
+	 background-color: rgba(192, 188, 188, 0.137);
+	 border-radius: 80px;
 }
- @media (max-width: 550px) {
-	 .screen .mobile-container .game-container {
-		 flex-direction: column;
-		 width: 100%;
-		 padding: 0px;
-	}
-}
- .screen .mobile-container .game-container .game {
+ 
+ .screen .app-container .game-container .game {
 	 padding: 10px;
 	 display: flex;
 	 flex-direction: column;
 	 align-items: center;
-	 background-color: black;
-	 width: 90%;
+	 background-color: rgba(116, 112, 112, 0.199);
+   width: 100%;
+   border-radius: 80px;
+
 }
- @media (max-width: 450px) {
-	 .screen .mobile-container .game-container .game {
-		 width: 100%;
-		 padding: 0px;
-	}
-}
- .screen .mobile-container .game-container .game h4 {
+ 
+ .screen .app-container .game-container .game h4 {
 	 font-size: 1.5rem;
 	 margin: 0;
 	 padding: 5px;
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game h4 {
-		 font-size: 1.2rem;
-	}
+ 
+ .screen .app-container .game-container .game .generation {
+	 color: #070707;
 }
- .screen .mobile-container .game-container .game .generation {
-	 color: #adaaaa;
-}
- .screen .mobile-container .game-container .game .grid {
-	 background-color: black;
+ .screen .app-container .game-container .game .grid {
+	 background-color: rgba(71, 70, 70, 0.39);
 	 width: 40rem;
 	 height: 40rem;
 	 display: flex;
 	 flex-flow: row wrap;
 }
- @media (max-width: 800px) {
-	 .screen .mobile-container .game-container .game .grid {
-		 width: 30rem;
-		 height: 30rem;
-	}
-}
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game .grid {
-		 width: 25rem;
-		 height: 25rem;
-	}
-}
- @media (max-width: 450px) {
-	 .screen .mobile-container .game-container .game .grid {
-		 width: 15rem;
-		 height: 15rem;
-	}
-}
- .screen .mobile-container .game-container .game .grid .cell {
+ 
+ 
+ .screen .app-container .game-container .game .grid .cell {
 	 cursor: pointer;
 	 width: 0.8rem;
 	 height: 0.8rem;
-	 border: solid 1px #0b0958;
+	 border: solid 1px rgb(22, 54, 83,.9);
 }
- @media (max-width: 800px) {
-	 .screen .mobile-container .game-container .game .grid .cell {
-		 width: 0.6rem;
-		 height: 0.6rem;
-	}
+ 
+ .screen .app-container .game-container .game .grid .cell:hover {
+	 border-color: rgb(251, 228, 199,.99);
+	 background-color:  rgb(251, 228, 199);
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game .grid .cell {
-		 width: 0.5rem;
-		 height: 0.5rem;
-	}
+ .screen .app-container .game-container .game .grid .cell.alive {
+	 background-color: rgb(251, 228, 199,.99);
 }
- @media (max-width: 450px) {
-	 .screen .mobile-container .game-container .game .grid .cell {
-		 width: 0.3rem;
-		 height: 0.3rem;
-	}
-}
- .screen .mobile-container .game-container .game .grid .cell:hover {
-	 border-color: #fc05db;
-	 background-color: black;
-}
- .screen .mobile-container .game-container .game .grid .cell.alive {
-	 background-color: #fc05db;
-}
- .screen .mobile-container .game-container .game .controls {
+ .screen .app-container .game-container .game .controls {
 	 padding: 10px 0;
-	 background-color: black;
+	 background-color: rgba(0, 0, 0, 0.171);
 	 display: flex;
 	 width: 100%;
 	 justify-content: space-between;
-	 align-items: center;
+   align-items: center;
+   border-radius: 80px;
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game .controls {
-		 padding: 5px 0;
-	}
-}
- @media (max-width: 450px) {
-	 .screen .mobile-container .game-container .game .controls {
-		 max-width: 19rem;
-	}
-}
- @media (max-width: 350px) {
-	 .screen .mobile-container .game-container .game .controls {
-		 width: 100%;
-	}
-}
- .screen .mobile-container .game-container .game .controls .control {
+ 
+ .screen .app-container .game-container .game .controls .control {
 	 font-size: 1.6rem;
-	 color: white;
+	 color: rgb(22, 54, 83,.9);
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game .controls .control {
-		 font-size: 1.2rem;
-	}
+ 
+ .screen .app-container .game-container .game .controls .control:hover {
+	 color: rgb(251, 228, 199,.99);
 }
- @media (max-width: 350px) {
-	 .screen .mobile-container .game-container .game .controls .control {
-		 font-size: 1rem;
-	}
+ .screen .app-container .game-container .game .controls .control:active {
+	 color: rgb(22, 54, 83,.9);
 }
- .screen .mobile-container .game-container .game .controls .control:hover {
-	 color: #fc05db;
-}
- .screen .mobile-container .game-container .game .controls .control:active {
-	 color: darkgreen;
-}
- .screen .mobile-container .game-container .game .controls .main {
+ .screen .app-container .game-container .game .controls .main {
 	 display: flex;
 	 justify-content: flex-start;
 }
- .screen .mobile-container .game-container .game .controls .main .control {
+ .screen .app-container .game-container .game .controls .main .control {
 	 padding: 0 10px;
 }
- .screen .mobile-container .game-container .game .controls .speed {
+ .screen .app-container .game-container .game .controls .speed {
 	 display: flex;
 	 align-items: center;
 	 justify-content: flex-end;
 }
- .screen .mobile-container .game-container .game .controls .speed p {
+ .screen .app-container .game-container .game .controls .speed p {
 	 margin: 0;
 	 font-size: 1.5rem;
-	 color: white;
+	 color: black;
 	 padding: 0 5px;
 }
- @media (max-width: 800px) {
-	 .screen .mobile-container .game-container .game .controls .speed p {
-		 font-size: 1.2rem;
-	}
-}
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .game .controls .speed p {
-		 font-size: 1rem;
-	}
-}
- .screen .mobile-container .game-container .patternInfo {
-	 display: flex;
+ 
+ .screen .app-container .game-container .patternInfo {
+   display: flex;
+   align-self: center;
 	 align-items: center;
-	 flex-direction: column;
-	 width: 100%;
+   flex-direction: column;
+   margin: 50px;
+   width: 100%;
 }
- .screen .mobile-container .game-container .patternInfo h3 {
+ .screen .app-container .game-container .patternInfo h3 {
 	 color: white;
 	 text-align: center;
 	 margin: 0;
 	 font-size: 1.5rem;
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .patternInfo h3 {
-		 font-size: 1rem;
-	}
-}
- @media (max-width: 550px) {
-	 .screen .mobile-container .game-container .patternInfo h3 {
-		 font-size: 1.5rem;
-		 align-self: flex-start;
-		 padding-left: 5%;
-		 padding-top: 1.5rem;
-	}
-}
- .screen .mobile-container .game-container .patternInfo .pattInfo {
+ 
+ .screen .app-container .game-container .patternInfo .pattInfo {
 	 margin: 5px 0;
 	 border-radius: 0.2rem;
-	 background-color: black;
-	 border: 2px solid darkgreen;
+	 background-color: rgba(206, 99, 99, 0.61);
+	 border: 2px solid rgb(52, 16, 117);
 	 font-size: 1rem;
 }
- @media (max-width: 675px) {
-	 .screen .mobile-container .game-container .patternInfo .pattInfo {
-		 font-size: 0.7rem;
-		 margin: 4px 0;
-		 padding: 4px;
-	}
-}
- @media (max-width: 550px) {
-	 .screen .mobile-container .game-container .patternInfo .pattInfo {
-		 font-size: 1.2rem;
-		 margin: 8px 0;
-		 padding: 10px;
-		 border: 4px solid darkgreen;
-		 width: 90%;
-	}
-}
- .screen .mobile-container .game-container .patternInfo .pattInfo:hover {
+ 
+ .screen .app-container .game-container .patternInfo .pattInfo:hover {
 	 color: white;
-	 border-color: #fc05db;
-	 background-color: #131613;
+	 border-color: #3205fc;
+	 background-color: #0e0247;
 }
  .screen .about {
 	 width: 90%;
 	 padding: 5px;
 	 max-width: 950px;
 }
- @media (max-width: 675px) {
-	 .screen .about {
-		 max-width: 500px;
-	}
-}
+ 
  .screen .about h3 {
 	 font-size: 2rem;
 	 color: white;
 	 padding: 1em 0;
 }
- @media (max-width: 675px) {
-	 .screen .about h3 {
-		 font-size: 1.5rem;
-	}
-}
+
  .screen .about h4 {
 	 font-size: 1.5rem;
 	 color: white;
 	 padding: 1em 0;
 }
- @media (max-width: 675px) {
-	 .screen .about h4 {
-		 font-size: 1rem;
-	}
-}
+ 
  .screen .about p {
 	 font-size: 1.2rem;
 	 color: #adaaaa;
 	 line-height: 1.5;
 }
- @media (max-width: 675px) {
-	 .screen .about p {
-		 font-size: 0.8rem;
-	}
-}
+
  .screen .about li {
 	 font-size: 1.2rem;
 	 line-height: 1.5;
 	 color: #adaaaa;
 }
- @media (max-width: 675px) {
-	 .screen .about li {
-		 font-size: 0.8rem;
-	}
-}
+ 
  .screen .footer {
 	 width: 100%;
 	 padding-top: 2rem;

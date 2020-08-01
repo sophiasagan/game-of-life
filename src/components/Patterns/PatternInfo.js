@@ -27,9 +27,44 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
         setGrid(setPattern("snark"));
     };
 
-    const life = () => {
+    const addThunderBird = () => {
         setGeneration(0);
-        setGrid(getGrid("life"));
+        setGrid(setPattern("thunderBird"));
+    };
+
+    const addQueenBee = () => {
+        setGeneration(0);
+        setGrid(setPattern("queenBee"));
+    };
+
+    const addRabbits = () => {
+        setGeneration(0);
+        setGrid(setPattern("rabbits"));
+    };
+
+    const addDieHard = () => {
+        setGeneration(0);
+        setGrid(setPattern("dieHard"));
+    };
+
+    const addGlasses = () => {
+        setGeneration(0);
+        setGrid(setPattern("glasses"));
+    };
+
+    const addBob = () => {
+        setGeneration(0);
+        setGrid(setPattern("bob"));
+    };
+
+    const addCastle = () => {
+        setGeneration(0);
+        setGrid(setPattern("castle"));
+    };
+
+    const home = () => {
+        setGeneration(0);
+        setGrid(getGrid("home"));
     };
 
     const random = () => {
@@ -39,28 +74,49 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
 
     return (
         <div className="patternInfo">
-            <DropdownButton id="dropdown-basic-button" title="Patterns">
-            {/* <h3>Figures</h3> */}
-            <Dropdown.Item className="pattInfo" onClick={addPulsar}>
+            {/* <DropdownButton id="dropdown-basic-button" title="Patterns"> */}
+            <h3>Patterns</h3>
+            <Button className="pattInfo" onClick={addPulsar}>
                 Pulsar
-            </Dropdown.Item>
-            <Dropdown.Item className="pattInfo" onClick={addGlider}>
+            </Button>
+            <Button className="pattInfo" onClick={addGlider}>
                 Glider
-            </Dropdown.Item>
-            <Dropdown.Item className="pattInfo" onClick={addSnark}>
+            </Button>
+            <Button className="pattInfo" onClick={addSnark}>
                 Snark
-            </Dropdown.Item>
-            <Dropdown.Item className="pattInfo" onClick={addGun}>
+            </Button>
+            <Button className="pattInfo" onClick={addDieHard}>
+                DieHard
+            </Button>
+            <Button className="pattInfo" onClick={addCastle}>
+                Castle
+            </Button>
+            <Button className="pattInfo" onClick={addThunderBird}>
+                Thunderbird
+            </Button>
+            <Button className="pattInfo" onClick={addQueenBee}>
+                Queen Bee
+            </Button>    
+            <Button className="pattInfo" onClick={addRabbits}>
+                Rabbits
+            </Button>  
+            <Button className="pattInfo" onClick={addGlasses}>
+                Glasses
+            </Button> 
+            <Button className="pattInfo" onClick={addBob}>
+                Bob
+            </Button>           
+            <Button className="pattInfo" onClick={addGun}>
                 Glider Gun
-            </Dropdown.Item>
-            <Dropdown.Item className="pattInfo" onClick={life}>
-                Life
-            </Dropdown.Item>
-            <Dropdown.Item className="pattInfo" onClick={random}>
+            </Button>
+            <Button className="pattInfo" onClick={home}>
+                Home
+            </Button>
+            <Button className="pattInfo" onClick={random}>
                 <FaRandom className="" />
                 Random
-            </Dropdown.Item>
-            </DropdownButton>
+            </Button>
+            {/* </DropdownButton> */}
         </div>
     );
 };

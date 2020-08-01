@@ -1,23 +1,24 @@
-import { pulsar, glider, gliderLeft, house } from "../Patterns/patterns";
+import { pulsar, glider, gliderLeft, bob, castle } from "../Patterns/patterns";
 import Cell from "../Cell/Cell";
 
 // Returns a preconfigured golGrid
-export const getGrid = (figure) => {
+export const getGrid = (shape) => {
   let newGrid = createGrid();
-  switch (figure) {
-    case "life":
-      return life(newGrid);
+  switch (shape) {
+    case "home":
+      return home(newGrid);
     default:
       break;
   }
 };
 
-const life = (golGrid) => {
+const home = (golGrid) => {
   pulsar(golGrid);
   glider(golGrid);
   gliderLeft(golGrid);
-  // house(golGrid);
-  // golGrid[45].fill(1);
+  bob(golGrid);
+  castle(golGrid);
+  golGrid[46].fill(1);
 
   return golGrid;
 };

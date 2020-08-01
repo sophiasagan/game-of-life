@@ -73,4 +73,4 @@ Project is: _in progress_,
 Add here credits. Project inspired by..., based on...
 
 ## Contact
-Created by []() - feel free to contact me!
+Created by [Sophia Jung](@KingSofieJ) - feel free to contact me!
