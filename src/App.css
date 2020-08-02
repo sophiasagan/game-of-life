@@ -29,12 +29,10 @@
   padding: 2rem 0;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
-
 
 .screen .app-container h1 {
   font-size: calc(20px + 2vmin);
@@ -179,14 +177,17 @@
 
 .screen .about:hover {
   color: burlywood;
-};
+}
 
 .screen .footer {
   width: 100%;
-  padding-top: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.screen .footer p {
+  padding-top: 2rem;
   color: #adaaaa;
   font-size: 0.9rem;
 }
