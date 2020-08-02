@@ -103,7 +103,9 @@ const Game = () => {
             <h4 className="generation">Generation: {generation}</h4>
           </div>
           <PatternInfo setGrid={setGrid} setGeneration={setGeneration} />
+          <div className="about">
           <CarouselFunc />
+          </div>
         </div>
       </div>
       <Footer />

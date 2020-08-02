@@ -1,18 +1,23 @@
-@import '~normalize.css';
+@import "~normalize.css";
 
 .App {
-  
   text-align: center;
-  font-family: 'Gotu', sans-serif;
+  font-family: "Gotu", sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgb(22, 54, 83,.9), rgb(82, 93, 111,.9), rgb(137, 135, 140,.95), rgb(193, 181, 169,.97), rgb(251, 228, 199,.99)),
-  url("img/background.png"); 
-}  
+  background-image: linear-gradient(
+      rgb(22, 54, 83, 0.9),
+      rgb(82, 93, 111, 0.9),
+      rgb(137, 135, 140, 0.95),
+      rgb(193, 181, 169, 0.97),
+      rgb(251, 228, 199, 0.99)
+    ),
+    url("img/background.png");
+}
 
 .App-header {
   display: flex;
@@ -24,24 +29,21 @@
   padding: 2rem 0;
 }
 
-
-
 /* .AboutCarousel {
   width: 40%;
-  float: right; */ 
-  /* padding: 20px; */
-  /* border: 2px solid red; */
+  float: right; */
+/* padding: 20px; */
+/* border: 2px solid red; */
 
 /* } */
 
-
 /* @import '~normalize.css'; */
 
- * {
-	 box-sizing: border-box;
-	 margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
- /* html {
+/* html {
 	 background-color: #131613;
 	 font-family: 'Gotu', sans-serif;
 	 -webkit-touch-callout: none;
@@ -51,207 +53,208 @@
 	 -ms-user-select: none;
 	 user-select: none;
 } */
- /* .screen {
+/* .screen {
 	 display: flex;
 	 flex-direction: column;
 	 align-items: center;
 } */
- 
- .screen .app-container h1 {
-	 font-size: calc(20px + 2vmin);
-	 margin: 0;
-	 text-align: center;
-	 color: white;
-	 padding: 10px 0;
-	 line-height: 1.5;
-}
- 
- .screen .app-container .game-container {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 /* border: solid black 2px; */
-	 padding: 0 180px;
-	 background-color: rgba(192, 188, 188, 0.137);
-	 border-radius: 80px;
-}
- 
- .screen .app-container .game-container .game {
-	 padding: 10px;
-	 display: flex;
-	 flex-direction: column;
-	 align-items: center;
-	 background-color: rgba(116, 112, 112, 0.199);
-   width: 100%;
-   border-radius: 80px;
 
-}
- 
- .screen .app-container .game-container .game h4 {
-	 font-size: 1.5rem;
-	 margin: 0;
-	 padding: 5px;
-}
- 
- .screen .app-container .game-container .game .generation {
-	 color: #070707;
-}
- .screen .app-container .game-container .game .grid {
-	 background-color: rgba(71, 70, 70, 0.39);
-	 width: 40rem;
-	 height: 40rem;
-	 display: flex;
-	 flex-flow: row wrap;
-}
- 
- 
- .screen .app-container .game-container .game .grid .cell {
-	 cursor: pointer;
-	 width: 0.8rem;
-	 height: 0.8rem;
-	 border: solid 1px rgb(22, 54, 83,.9);
-}
- 
- .screen .app-container .game-container .game .grid .cell:hover {
-	 border-color: rgb(251, 228, 199,.99);
-	 background-color:  rgb(251, 228, 199);
-}
- .screen .app-container .game-container .game .grid .cell.alive {
-	 background-color: rgb(251, 228, 199,.99);
-}
- .screen .app-container .game-container .game .controls {
-	 padding: 10px 0;
-	 background-color: rgba(0, 0, 0, 0.171);
-	 display: flex;
-	 width: 100%;
-	 justify-content: space-between;
-   align-items: center;
-   border-radius: 80px;
-}
- 
- .screen .app-container .game-container .game .controls .control {
-	 font-size: 1.6rem;
-	 color: rgb(22, 54, 83,.9);
-}
- 
- .screen .app-container .game-container .game .controls .control:hover {
-	 color: rgb(251, 228, 199,.99);
-}
- .screen .app-container .game-container .game .controls .control:active {
-	 color: rgb(22, 54, 83,.9);
-}
- .screen .app-container .game-container .game .controls .main {
-	 display: flex;
-	 justify-content: flex-start;
-}
- .screen .app-container .game-container .game .controls .main .control {
-	 padding: 0 10px;
-}
- .screen .app-container .game-container .game .controls .speed {
-	 display: flex;
-	 align-items: center;
-	 justify-content: flex-end;
-}
- .screen .app-container .game-container .game .controls .speed p {
-	 margin: 0;
-	 font-size: 1.5rem;
-	 color: black;
-	 padding: 0 5px;
-}
- 
- .screen .app-container .game-container .patternInfo {
-   display: flex;
-   align-self: center;
-	 align-items: center;
-   flex-direction: column;
-   margin: 50px;
-   width: 100%;
-}
- .screen .app-container .game-container .patternInfo h3 {
-	 color: white;
-	 text-align: center;
-	 margin: 0;
-	 font-size: 1.5rem;
-}
- 
- .screen .app-container .game-container .patternInfo .pattInfo {
-	 margin: 5px 0;
-	 border-radius: 0.2rem;
-	 background-color: rgba(206, 99, 99, 0.61);
-	 border: 2px solid rgb(52, 16, 117);
-	 font-size: 1rem;
-}
- 
- .screen .app-container .game-container .patternInfo .pattInfo:hover {
-	 color: white;
-	 border-color: #3205fc;
-	 background-color: #0e0247;
-}
- .screen .about {
-	 width: 90%;
-	 padding: 5px;
-	 max-width: 950px;
-}
- 
- .screen .about h3 {
-	 font-size: 2rem;
-	 color: white;
-	 padding: 1em 0;
+.screen .app-container h1 {
+  font-size: calc(20px + 2vmin);
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  line-height: 1.5;
 }
 
- .screen .about h4 {
-	 font-size: 1.5rem;
-	 color: white;
-	 padding: 1em 0;
-}
- 
- .screen .about p {
-	 font-size: 1.2rem;
-	 color: #adaaaa;
-	 line-height: 1.5;
+.screen .app-container .game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid black 2px; */
+  padding: 0 180px;
+  background-color: rgba(192, 188, 188, 0.137);
+  border-radius: 80px;
 }
 
- .screen .about li {
-	 font-size: 1.2rem;
-	 line-height: 1.5;
-	 color: #adaaaa;
+.screen .app-container .game-container .game {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(116, 112, 112, 0.199);
+  width: 100%;
+  border-radius: 80px;
 }
- 
- .screen .footer {
-	 width: 100%;
-	 padding-top: 2rem;
-	 display: flex;
-	 align-items: center;
-	 flex-direction: column;
+
+.screen .app-container .game-container .game h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 5px;
 }
- .screen .footer .upper-footer {
-	 padding: 5px;
+
+.screen .app-container .game-container .game .generation {
+  color: #070707;
 }
- .screen .footer .upper-footer p {
-	 color: #adaaaa;
-	 font-size: 0.9rem;
+.screen .app-container .game-container .game .grid {
+  background-color: rgba(71, 70, 70, 0.39);
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  flex-flow: row wrap;
 }
- .screen .footer .lower-footer {
-	 padding: 5px;
+
+.screen .app-container .game-container .game .grid .cell {
+  cursor: pointer;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: solid 1px rgb(22, 54, 83, 0.9);
 }
- .screen .footer .lower-footer .link {
-	 font-size: 1.5rem;
-	 padding: 5px;
+
+.screen .app-container .game-container .game .grid .cell:hover {
+  border-color: rgb(251, 228, 199, 0.99);
+  background-color: rgb(251, 228, 199);
 }
- .button {
-	 padding: 5px;
-	 width: 100%;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 color: #adaaaa;
-	 cursor: pointer;
+.screen .app-container .game-container .game .grid .cell.alive {
+  background-color: rgb(251, 228, 199, 0.99);
 }
- .link {
-	 text-decoration: none;
-	 color: white;
+.screen .app-container .game-container .game .controls {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.171);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 80px;
 }
- .link:hover {
-	 color: #fc05db;
+
+.screen .app-container .game-container .game .controls .control {
+  font-size: 1.6rem;
+  color: rgb(22, 54, 83, 0.9);
 }
- 
+
+.screen .app-container .game-container .game .controls .control:hover {
+  color: rgb(251, 228, 199, 0.99);
+}
+.screen .app-container .game-container .game .controls .control:active {
+  color: rgb(22, 54, 83, 0.9);
+}
+.screen .app-container .game-container .game .controls .main {
+  display: flex;
+  justify-content: flex-start;
+}
+.screen .app-container .game-container .game .controls .main .control {
+  padding: 0 10px;
+}
+.screen .app-container .game-container .game .controls .speed {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.screen .app-container .game-container .game .controls .speed p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 5px;
+}
+
+.screen .app-container .game-container .patternInfo {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+  width: 100%;
+}
+.screen .app-container .game-container .patternInfo h3 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.screen .app-container .game-container .patternInfo .pattInfo {
+  margin: 5px 0;
+  border-radius: 0.2rem;
+  background-color: rgb(22, 54, 83, 0.9);
+  border: 2px solid rgb(87, 1, 245);
+  font-size: 1rem;
+}
+
+.screen .app-container .game-container .patternInfo .pattInfo:hover {
+  color: white;
+  border-color: #3205fc;
+  background-color: #0e0247;
+}
+.screen .about {
+display: flex;
+justify-content: flex-end;
+  width: 90%;
+  padding: 5px;
+  max-width: 950px;
+}
+
+/* .screen .about h3 {
+  font-size: 2rem;
+  color: white;
+  padding: 1em 0;
+}
+
+.screen .about h4 {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1em 0;
+}
+
+.screen .about p {
+  font-size: 1.2rem;
+  color: #adaaaa;
+  line-height: 1.5;
+}
+
+.screen .about li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #adaaaa;
+} */
+
+.screen .footer {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.screen .footer .upper-footer {
+  padding: 5px;
+}
+.screen .footer .upper-footer p {
+  color: #adaaaa;
+  font-size: 0.9rem;
+}
+.screen .footer .lower-footer {
+  padding: 5px;
+}
+.screen .footer .lower-footer .link {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.button {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #adaaaa;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: rgb(22, 54, 83, 0.9);
+}
