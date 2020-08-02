@@ -88,5 +88,11 @@ Project is: _finished_,
 ## Inspiration
 Based on John H Conway's Game of Life using ['life-like cellular automata'](https://conwaylife.com/wiki/Cellular_automaton#Life-like_cellular_automata)
 
+## Resources
++ https://conwaylife.com/wiki/Main_Page
++ https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
++ https://blog.logrocket.com/building-reusable-ui-components-with-react-hooks/
++ https://www.nzeldes.com/Miscellany/Life.htm
+
 ## Contact
 Created by [Sophia Jung](https://twitter.com/KingSofieJ) - feel free to contact me!
