@@ -33,6 +33,7 @@ export const setPattern = (patternMaker) => {
   }
 };
 
+// https://conwaylife.com/wiki/Glider
 export const glider = (golGrid) => {
   golGrid[3][1] = 1;
   golGrid[3][2] = 1;
@@ -53,6 +54,7 @@ export const gliderLeft = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Die_hard
 export const dieHard = (golGrid) => {
   golGrid[10][17] = 1;
   golGrid[11][11] = 1;
@@ -65,6 +67,7 @@ export const dieHard = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Queen_bee
 export const queenBee = (golGrid) => {
   golGrid[20][24] = 1;
   golGrid[21][23] = 1;
@@ -82,6 +85,7 @@ export const queenBee = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Rabbits
 export const rabbits = (golGrid) => {
   golGrid[42][31] = 1;
   golGrid[42][35] = 1;
@@ -96,6 +100,7 @@ export const rabbits = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Thunderbird
 export const thunderBird = (golGrid) => {
   golGrid[15][14] = 1;
   golGrid[15][15] = 1;
@@ -107,6 +112,7 @@ export const thunderBird = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Snark
 export const snark = (golGrid) => {
   golGrid[1][7] = 1;
   golGrid[1][8] = 1;
@@ -184,6 +190,7 @@ export const snark = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Pulsar
 export const pulsar = (golGrid) => {
   golGrid[2][34] = 1;
   golGrid[2][35] = 1;
@@ -246,6 +253,7 @@ export const pulsar = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Gosper_glider_gun
 export const gliderGun = (golGrid) => {
   golGrid[15][5] = 1;
   golGrid[15][6] = 1;
@@ -292,6 +300,7 @@ export const gliderGun = (golGrid) => {
   return golGrid;
 };
 
+// random idea
 export const bob = (golGrid) => {
   golGrid[30][25] = 1;
   golGrid[30][26] = 1;
@@ -325,6 +334,7 @@ export const bob = (golGrid) => {
   return golGrid;
 };
 
+// https://conwaylife.com/wiki/Glasses
 export const glasses = (golGrid) => {
   golGrid[20][25] = 1;
   golGrid[20][34] = 1;
@@ -393,6 +403,7 @@ export const glasses = (golGrid) => {
   return golGrid;
 };
 
+// random idea
 export const castle = (golGrid) => {
   golGrid[21][11] = 1;
   golGrid[21][14] = 1;

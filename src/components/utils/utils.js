@@ -1,7 +1,6 @@
 import { pulsar, glider, gliderLeft, bob, castle } from "../Patterns/patterns";
-import Cell from "../Cell/Cell";
 
-// Returns a preconfigured golGrid
+// Set a preconfigured home pattern
 export const getGrid = (shape) => {
   let newGrid = createGrid();
   switch (shape) {
@@ -12,6 +11,7 @@ export const getGrid = (shape) => {
   }
 };
 
+// Setting home pattern for initial screen
 const home = (golGrid) => {
   pulsar(golGrid);
   glider(golGrid);
@@ -36,9 +36,7 @@ const operations = [
   [-1, 0],
 ];
 
-const cellSide = Math.round(gridSize / Cell);
-
-// Finds the number of neighbors of a cell
+// Finds the count of neighbors 
 const getNeighbors = (i, j, golGrid) => {
   let neighbors = 0;
   operations.forEach(([x, y]) => {
@@ -51,7 +49,7 @@ const getNeighbors = (i, j, golGrid) => {
   return neighbors;
 };
 
-// Takes in a golGrid and returns a new golGrid based on the rules of life
+// Copies golGrid and returns a new golGrid based on the rules of life
 export const nextGrid = (golGrid) => {
   let newGrid = createGrid();
   for (let i = 0; i < gridSize; i++) {
@@ -83,21 +81,3 @@ export const generateRandomGrid = () => {
   return rows;
 };
 
-// export const borders = (row: Number, col: Number) => {
-//   const size = this.cellSide;
-//   let wrap = [-1, 0, 1];
-//   let row_index;
-//   let col_index;
-//   let sum = 0;
-//   for (let i = 0; i < gridSize; i++) {
-//     for (let j = 0; j < gridSize; j++) {
-//       row_index = (row + wrap[i]) % size;
-//       col_index = (col + wrap[j]) % size;
-//       if (wrap[i] !== 0 || wrap[j] !== 0) {
-//         sum += this.state.grid.currentGrit.value(row_index, col_index);
-//       }
-//     }
-//   }
-
-//   return sum;
-// };

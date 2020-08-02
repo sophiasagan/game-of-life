@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  blue,
   deepPurple,
   green,
   blueGrey,
   grey,
   indigo,
   cyan,
-  lightBlue,
   pink,
 } from "@material-ui/core/colors";
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
@@ -69,8 +67,6 @@ const AboutCarousel = ({ handleOpen, setHandleOpen, isMobile }) => {
           style={{ backgroundColor: pink[600] }}
           title="Rules: Survive"
           subtitle="Survive: Each live cell with either two or three live neighbors will remain alive for the next generation."
-
-          //   "All rules apply to all cells at the same time."
         />
         <Slide
           media={
@@ -97,7 +93,5 @@ const AboutCarousel = ({ handleOpen, setHandleOpen, isMobile }) => {
     </div>
   );
 };
-
-// export default withStyles(styles)(AboutCarousel);
 
 export default AboutCarousel;

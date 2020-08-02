@@ -4,7 +4,6 @@ import { getGrid } from "./utils/utils";
 import Grid from "./Grid";
 import Controls from "./Controls/Controls";
 import PatternInfo from "./Patterns/PatternInfo";
-// import About from "./About";
 import CarouselFunc from "./Carousel/CarouselFunc";
 import Footer from "./About/Footer";
 
@@ -19,8 +18,6 @@ const Game = () => {
   const isRunningRef = useRef();
   const generationRef = useRef();
   const speedRef = useRef();
-
-  const cellSide = 0;
 
   isRunningRef.current = isRunning;
   generationRef.current = generation;

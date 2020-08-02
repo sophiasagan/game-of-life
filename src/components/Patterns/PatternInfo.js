@@ -4,7 +4,6 @@ import { getGrid } from "../utils/utils";
 import { generateRandomGrid } from "../utils/utils";
 import Button from "../Buttons/Button";
 import { FaRandom } from "react-icons/fa";
-import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 const PatternInfo = ({ setGrid, setGeneration }) => {
     const addGlider = () => {
@@ -74,7 +73,7 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
 
     return (
         <div className="patternInfo">
-            {/* <DropdownButton id="dropdown-basic-button" title="Patterns"> */}
+           
             <h3>Patterns</h3>
             <Button className="pattInfo" onClick={addPulsar}>
                 Pulsar
@@ -116,7 +115,7 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
                 <FaRandom className="" />
                 Random
             </Button>
-            {/* </DropdownButton> */}
+            
         </div>
     );
 };
