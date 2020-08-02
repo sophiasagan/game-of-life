@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5068bfe-4057-473e-8caa-e687090af14c/deploy-status)](https://app.netlify.com/sites/elegant-mccarthy-4b9082/deploys)
+
 # Conway's Game of Life
 > Conway’s Game of Life is a venerable old algorithm that simulates “life” on a 2D grid. It’s a class of algorithm known as a cellular automaton.
 
@@ -49,7 +51,7 @@ This is a Turing complete cellular automata project that only requires an initia
 * Tech 3 - version 3.0
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+[Game of Life](https://elegant-mccarthy-4b9082.netlify.app/)
 
 ## Code Examples
 Show examples of usage:
