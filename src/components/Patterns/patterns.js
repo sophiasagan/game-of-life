@@ -26,6 +26,8 @@ export const setPattern = (patternMaker) => {
       return castle(newGrid);
     case "bob":
       return bob(newGrid);
+    case "dragon":
+      return dragon(newGrid);
     case "gliderGun":
       return gliderGun(newGrid);
     default:
@@ -546,6 +548,135 @@ export const castle = (golGrid) => {
   golGrid[45][19] = 1;
   golGrid[45][21] = 1;
   golGrid[45][22] = 1;
+
+  return golGrid;
+};
+
+
+// https://conwaylife.com/wiki/Dragon
+export const dragon = (golGrid) => {
+  golGrid[2][33] = 1;
+
+  golGrid[3][33] = 1;
+  golGrid[3][34] = 1;
+  golGrid[3][49] = 1;
+
+  golGrid[4][31] = 1;
+  golGrid[4][33] = 1;
+  golGrid[4][34] = 1;
+  golGrid[4][40] = 1;
+  golGrid[4][42] = 1;
+  golGrid[4][47] = 1;
+  golGrid[4][48] = 1;
+
+  golGrid[5][26] = 1;
+  golGrid[5][30] = 1;
+  golGrid[5][34] = 1;
+  golGrid[5][35] = 1;
+  golGrid[5][36] = 1;
+  golGrid[5][39] = 1;
+  golGrid[5][44] = 1;
+
+  golGrid[6][21] = 1;
+  golGrid[6][22] = 1;
+  golGrid[6][26] = 1;
+  golGrid[6][29] = 1;
+  golGrid[6][36] = 1;
+  golGrid[6][38] = 1;
+  golGrid[6][44] = 1;
+  golGrid[6][45] = 1;
+  golGrid[6][46] = 1;
+  golGrid[6][49] = 1;
+
+  golGrid[7][21] = 1;
+  golGrid[7][22] = 1;
+  golGrid[7][26] = 1;
+  golGrid[7][28] = 1;
+  golGrid[7][29] = 1;
+  golGrid[7][36] = 1;
+  golGrid[7][40] = 1;
+  golGrid[7][42] = 1;
+  golGrid[7][44] = 1;
+
+  golGrid[8][21] = 1;
+  golGrid[8][22] = 1;
+  golGrid[8][26] = 1;
+  golGrid[8][27] = 1;
+  golGrid[8][29] = 1;
+  golGrid[8][47] = 1;
+  golGrid[8][48] = 1;
+
+  golGrid[9][26] = 1;
+  golGrid[9][27] = 1;
+  golGrid[9][42] = 1;
+  golGrid[9][49] = 1;
+  
+  golGrid[10][28] = 1;
+  golGrid[10][41] = 1;
+  golGrid[10][43] = 1;
+
+  golGrid[11][28] = 1;
+  golGrid[11][41] = 1;
+  golGrid[11][43] = 1;
+
+  golGrid[12][26] = 1;
+  golGrid[12][27] = 1;
+  golGrid[12][42] = 1;
+  golGrid[12][49] = 1;
+  golGrid[12][39] = 1;
+  golGrid[12][47] = 1;
+  golGrid[12][48] = 1;
+
+  golGrid[13][21] = 1;
+  golGrid[13][22] = 1;
+  golGrid[13][26] = 1;
+  golGrid[13][27] = 1;
+  golGrid[13][29] = 1;
+  golGrid[13][47] = 1;
+  golGrid[13][48] = 1;
+
+  golGrid[14][21] = 1;
+  golGrid[14][22] = 1;
+  golGrid[14][26] = 1;
+  golGrid[14][28] = 1;
+  golGrid[14][29] = 1;
+  golGrid[14][36] = 1;
+  golGrid[14][40] = 1;
+  golGrid[14][42] = 1;
+  golGrid[14][44] = 1;
+
+  golGrid[15][21] = 1;
+  golGrid[15][22] = 1;
+  golGrid[15][26] = 1;
+  golGrid[15][29] = 1;
+  golGrid[15][36] = 1;
+  golGrid[15][38] = 1;
+  golGrid[15][44] = 1;
+  golGrid[15][45] = 1;
+  golGrid[15][46] = 1;
+  golGrid[15][49] = 1;
+
+  golGrid[16][26] = 1;
+  golGrid[16][30] = 1;
+  golGrid[16][34] = 1;
+  golGrid[16][35] = 1;
+  golGrid[16][36] = 1;
+  golGrid[16][39] = 1;
+  golGrid[16][44] = 1;
+
+  golGrid[17][31] = 1;
+  golGrid[17][33] = 1;
+  golGrid[17][34] = 1;
+  golGrid[17][40] = 1;
+  golGrid[17][42] = 1;
+  golGrid[17][47] = 1;
+  golGrid[17][48] = 1;
+
+  golGrid[18][33] = 1;
+  golGrid[18][34] = 1;
+  golGrid[18][49] = 1;
+
+  golGrid[19][33] = 1;
 
   return golGrid;
 };

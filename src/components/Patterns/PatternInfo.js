@@ -61,6 +61,11 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
         setGrid(setPattern("castle"));
     };
 
+    const addDragon = () => {
+        setGeneration(0);
+        setGrid(setPattern("dragon"));
+    };
+
     const home = () => {
         setGeneration(0);
         setGrid(getGrid("home"));
@@ -107,6 +112,9 @@ const PatternInfo = ({ setGrid, setGeneration }) => {
             </Button>           
             <Button className="pattInfo" onClick={addGun}>
                 Glider Gun
+            </Button>
+            <Button className="pattInfo" onClick={addDragon}>
+                Dragon
             </Button>
             <Button className="pattInfo" onClick={home}>
                 Home

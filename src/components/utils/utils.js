@@ -1,4 +1,4 @@
-import { pulsar, glider, gliderLeft, bob, castle } from "../Patterns/patterns";
+import { dragon, glider, bob, castle } from "../Patterns/patterns";
 
 // Set a preconfigured home pattern
 export const getGrid = (shape) => {
@@ -13,9 +13,8 @@ export const getGrid = (shape) => {
 
 // Setting home pattern for initial screen
 const home = (golGrid) => {
-  pulsar(golGrid);
+  dragon(golGrid);
   glider(golGrid);
-  gliderLeft(golGrid);
   bob(golGrid);
   castle(golGrid);
   golGrid[46].fill(1);
