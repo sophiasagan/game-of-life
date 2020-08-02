@@ -41,7 +41,7 @@ This is a Turing complete cellular automata project that only requires an initia
 2. Otherwise you remain dead.
 
 ## Screenshots
-![Example screenshot](.\img\screencapture-elegant-mccarthy-4b9082-netlify-app-2020-08-02-17_19_36.png)
+![Example screenshot](/img/screencapture-elegant-mccarthy-4b9082-netlify-app-2020-08-02-17_19_36.png?raw=true)
 
 
 
@@ -57,7 +57,8 @@ This is a Turing complete cellular automata project that only requires an initia
 Show examples of usage:
 Buildout for pattern using coordinates
 
-`export const dieHard = (golGrid) => {
+```
+export const dieHard = (golGrid) => {
   golGrid[10][17] = 1;
   golGrid[11][11] = 1;
   golGrid[11][12] = 1;
@@ -67,7 +68,8 @@ Buildout for pattern using coordinates
   golGrid[12][18] = 1;
 
   return golGrid;
-};`
+};
+```
 
 ## Features
 List of features ready and TODOs for future development
