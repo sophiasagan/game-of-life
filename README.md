@@ -54,8 +54,7 @@ This is a Turing complete cellular automata project that only requires an initia
 [Game of Life](https://elegant-mccarthy-4b9082.netlify.app/)
 
 ## Code Examples
-Show examples of usage:
-Buildout for pattern using coordinates
+Buildout for pattern using coordinates:
 
 ```
 export const dieHard = (golGrid) => {
@@ -72,7 +71,6 @@ export const dieHard = (golGrid) => {
 ```
 
 ## Features
-List of features ready and TODOs for future development
 * Generation Count
 * Skip Generation
 * Pattern options
