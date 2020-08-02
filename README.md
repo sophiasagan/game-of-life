@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c5068bfe-4057-473e-8caa-e687090af14c/deploy-status)](https://app.netlify.com/sites/elegant-mccarthy-4b9082/deploys)
 
 # Conway's Game of Life
-> Conway’s Game of Life is a venerable old algorithm that simulates “life” on a 2D grid. It’s a class of algorithm known as a cellular automaton.
+> Conway’s Game of Life is an algorithm that simulates “life” on a 2D grid. It’s a class of algorithm known as a cellular automaton.
 
 ## Table of contents
 * [General info](#general-info)
@@ -41,38 +41,52 @@ This is a Turing complete cellular automata project that only requires an initia
 2. Otherwise you remain dead.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](.\img\screencapture-elegant-mccarthy-4b9082-netlify-app-2020-08-02-17_19_36.png)
 
 
 
 ## Technologies
-* Javascript - version 1.0
-* React - version 2.0
-* Tech 3 - version 3.0
+* Javascript - version 1.0.0
+* React - version 16.13.1
+<!-- * Tech 3 - version 3.0 -->
 
 ## Setup
 [Game of Life](https://elegant-mccarthy-4b9082.netlify.app/)
 
 ## Code Examples
 Show examples of usage:
-`put-your-code-here`
+Buildout for pattern using coordinates
+
+`export const dieHard = (golGrid) => {
+  golGrid[10][17] = 1;
+  golGrid[11][11] = 1;
+  golGrid[11][12] = 1;
+  golGrid[12][12] = 1;
+  golGrid[12][16] = 1;
+  golGrid[12][17] = 1;
+  golGrid[12][18] = 1;
+
+  return golGrid;
+};`
 
 ## Features
 List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Generation Count
+* Skip Generation
+* Pattern options
+* Speed up / Slow down
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Zoom to larger or smaller grid
+* Customizable size, shape, and color for grid and cells
+* On pattern hover tell about pattern - invented by, discovered in, pattern type, number of cells
 
 ## Status
-Project is: _in progress_, 
-<!-- _finished_, _no longer continue_ and why? -->
+Project is: _finished_, 
+<!-- _in progress_, _finished_, _no longer continue_ and why? -->
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Based on John H Conway's Game of Life using ['life-like cellular automata'](https://conwaylife.com/wiki/Cellular_automaton#Life-like_cellular_automata)
 
 ## Contact
-Created by [Sophia Jung](@KingSofieJ) - feel free to contact me!
+Created by [Sophia Jung](https://twitter.com/KingSofieJ) - feel free to contact me!
