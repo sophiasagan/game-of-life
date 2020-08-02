@@ -601,8 +601,8 @@ export const dragon = (golGrid) => {
   golGrid[8][21] = 1;
   golGrid[8][22] = 1;
   golGrid[8][26] = 1;
-  golGrid[8][27] = 1;
-  golGrid[8][29] = 1;
+  golGrid[8][37] = 1;
+  golGrid[8][39] = 1;
   golGrid[8][47] = 1;
   golGrid[8][48] = 1;
 
@@ -623,15 +623,12 @@ export const dragon = (golGrid) => {
   golGrid[12][27] = 1;
   golGrid[12][42] = 1;
   golGrid[12][49] = 1;
-  golGrid[12][39] = 1;
-  golGrid[12][47] = 1;
-  golGrid[12][48] = 1;
-
+  
   golGrid[13][21] = 1;
   golGrid[13][22] = 1;
   golGrid[13][26] = 1;
-  golGrid[13][27] = 1;
-  golGrid[13][29] = 1;
+  golGrid[13][37] = 1;
+  golGrid[13][39] = 1;
   golGrid[13][47] = 1;
   golGrid[13][48] = 1;
 
