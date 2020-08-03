@@ -93,6 +93,9 @@ Based on John H Conway's Game of Life using ['life-like cellular automata'](http
 + https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 + https://blog.logrocket.com/building-reusable-ui-components-with-react-hooks/
 + https://www.nzeldes.com/Miscellany/Life.htm
++ https://www.youtube.com/watch?v=R9Plq-D1gEk
++ https://www.youtube.com/watch?v=FWSR_7kZuYg
++ https://www.youtube.com/watch?v=DvVt11mPuM0&t=657s
 
 ## Contact
 Created by [Sophia Jung](https://twitter.com/KingSofieJ) - feel free to contact me!
